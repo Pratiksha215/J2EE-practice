@@ -1,0 +1,39 @@
+package pages;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class InputServlet
+ */
+//@WebServlet("/test1_input")
+public class InputServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("in do-get of"+getClass().getName());
+		//set cont type
+		response.setContentType("text/html");
+		try(PrintWriter pw=response.getWriter()
+				)   
+		{
+			pw.print("<h3>Details are : </h3>");
+		    pw.print("<p>Username : <b>" +request.getParameter("f1")+"</b></p>");
+		    pw.print("<p>Favourite colors : </p>");
+		    for(String i: request.getParameterValues("clr")) {
+		    	pw.write("<b>" +i+"</b></br>");
+		    }
+		    pw.print("<p>Browser : <b>" +request.getParameter("browser")+"</b></p>");
+		    pw.print("<p>Information : <b>" +request.getParameter("info")+"</b></p>");
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;project-restful-backend-using-jar&apos; to &apos;project-restful-backend-using-jar-with-security-added&apos;" description="Rename resource &apos;project-restful-backend-using-jar&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/project-restful-backend-using-jar" name="project-restful-backend-using-jar-with-security-added" stamp="1612440940903" updateReferences="true"/>
+</session>

@@ -1,0 +1,15 @@
+package com.app.dao;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.app.model.ProjectEmployeeMapping;
+import com.app.pojos.ProjectMapping;
+
+public interface IProjectMappingDao extends JpaRepository<ProjectMapping, Integer>{
+ //search by project name
+	public List<ProjectMapping> findAll();
+	Optional<ProjectMapping> findByprojectMappingid(Integer projectMappingid);
+}

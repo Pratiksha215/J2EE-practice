@@ -1,0 +1,99 @@
+package com.app.controler;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.exception.ResourceNotFoundException;
+import com.app.model.Bugs;
+import com.app.model.Email;
+import com.app.model.Employee;
+import com.app.repository.EmployeeDao;
+import com.app.service.MailService;
+
+@RestController
+@RequestMapping("/api/v1")
+public class EmployeeController {
+	@Autowired
+	private EmployeeDao employeedao;
+	
+	@Autowired
+	private MailService mailService;
+
+	@GetMapping("/employees")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public List<Employee> getAllEmployees(){
+		return employeedao.findAll();
+	}
+	
+	@GetMapping("/employees/{id}")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public Employee getEmployee(@PathVariable int id) {
+		return employeedao.findByEmpid(id);
+	}
+	
+	@PostMapping("/employees")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public Employee createEmployee(@RequestBody Employee employee) {
+		return employeedao.save(employee);
+	}
+	
+	@PutMapping("/employees/{id}")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public ResponseEntity<Employee> updateEmp(@PathVariable int id,@RequestBody Employee employeedata) throws Exception{
+		Employee emp = employeedao.findByEmpid(id);
+		if(emp==null) {
+			throw new ResourceNotFoundException("Bug does not exist" + id);
+		}
+			emp.setEmail(employeedata.getEmail());
+			emp.setPassword(employeedata.getPassword());
+//			emp.setStatus(employeedata.getStatus());
+//			bug.setProject(employeedata.getProject());
+//			bug.setBugdesc(employeedata.getBugdesc());
+			//bug.setComments(employeedata).getComments());
+			Employee updatedemp = employeedao.save(emp);
+			return ResponseEntity.ok(updatedemp);
+			
+	}
+	
+	
+//	@PutMapping("/email/{id}")
+//	public ResponseEntity<?> sendEmail(@PathVariable int id, Email email,@RequestBody Employee emaild) {
+//		System.out.println("in update person details" + id );
+//		// check if project exists
+//				Employee employee= employeedao.findByEmpid(id);
+//				if (employee != null ) {
+//					// project id valid : update the same
+//					//Employee existingPerson = employee.get();// DETACHED
+//					
+//						email.setDestEmail(emaild.getEmail());
+//						System.out.println(emaild.getEmail());
+//						email.setSubject("You are assigned with new bug");
+//						email.setMessage("Dear User,you have been assigned with new bug.Kindly login to BTS for more details.");
+//						mailService.sendEmail(email);
+//					}
+//					
+//					
+//					//existingProject.setDesignation(p.getDesignation());
+//					//existingProject.setSalary(p.getSalary());
+//					// update detached POJO
+//					//return new ResponseEntity<>(new ResponseDTO("success","Successfully mail sent",mailService), HttpStatus.OK);
+//					// save or update (insert: transient(value of ID : default
+//					// or non default value BUT existing on DB -- update
+//				Employee email1 = employeedao.save(employee);
+//				
+//				return ResponseEntity.ok(email1);
+//				}
+//	
+	
+}

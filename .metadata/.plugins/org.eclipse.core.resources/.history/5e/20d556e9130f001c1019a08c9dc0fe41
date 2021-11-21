@@ -1,0 +1,48 @@
+package com.app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.app.model.Email;
+import com.app.model.Employee;
+import com.app.repository.EmployeeDao;
+@Component
+public class Emailutil {
+
+	@Autowired
+	private MailService mailService;
+	
+	
+	public boolean sendEmail(  Email email, Employee emaild) {
+		System.out.println("in update person details" + id );
+		// check if project exists
+				//Employee employee= employeedao.findByEmpid(id);
+				if (employee != null ) {
+					// project id valid : update the same
+					//Employee existingPerson = employee.get();// DETACHED
+					
+						email.setDestEmail(emaild.getEmail());
+						System.out.println(emaild.getEmail());
+						email.setSubject("You are assigned with new bug");
+						email.setMessage("Dear User,you have been assigned with new bug.Kindly login to BTS for more details.");
+						mailService.sendEmail(email);
+					}
+					
+					
+					//existingProject.setDesignation(p.getDesignation());
+					//existingProject.setSalary(p.getSalary());
+					// update detached POJO
+					//return new ResponseEntity<>(new ResponseDTO("success","Successfully mail sent",mailService), HttpStatus.OK);
+					// save or update (insert: transient(value of ID : default
+					// or non default value BUT existing on DB -- update
+			//	Employee email1 = employeedao.save(employee);
+				
+				return ResponseEntity.ok(email1);
+				}
+	
+
+}

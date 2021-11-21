@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\PRATIKSHA\Downloads\Bug-Tracking-System"/>
+			<item value="C:\Users\PRATIKSHA\Desktop\New folder\DacProjectfinal"/>
+			<item value="C:\Users\PRATIKSHA\Downloads\DacProject-master (1)\DacProject-master"/>
+			<item value="C:\Users\PRATIKSHA\Downloads\DacProject (3)\DacProject"/>
+			<item value="C:\Users\PRATIKSHA\Downloads\DacProject (3)\DacProject\DacProject"/>
+			<item value="C:\Users\PRATIKSHA\Downloads\DacProject (2)"/>
+			<item value="C:\Users\PRATIKSHA\Downloads\DacProject (2)\DacProject"/>
+			<item value="F:\Madhura mam Advanced Java data\spring-angular-jwt-backend"/>
+			<item value="F:\DacProjectfinal"/>
+			<item value="F:\J2EE\DacProjectfinal"/>
+			<item value="C:\Users\PRATIKSHA\Desktop\project\DacProject"/>
+			<item value="F:\J2EE\project-restful-backend-using-jar-final"/>
+			<item value="F:\project-restful-backend-using-jar"/>
+			<item value="F:\Madhura mam Advanced Java data\day17_data\eclipse_projects\spring_boot_many_many"/>
+			<item value="F:\Madhura mam Advanced Java data\day16_lab"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="F:\J2EE\day11.1_lab"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.example"/>
+		</list>
+		<list key="name">
+			<item value="day14_lab"/>
+		</list>
+		<list key="artifactId">
+			<item value="day14_lab"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

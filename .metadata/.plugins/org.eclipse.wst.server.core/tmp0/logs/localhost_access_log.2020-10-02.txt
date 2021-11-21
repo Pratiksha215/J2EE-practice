@@ -1,0 +1,11 @@
+127.0.0.1 - - [02/Oct/2020:14:51:34 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:51:40 +0530] "GET /day7.1/ HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:51:40 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:51:54 +0530] "GET /day7.1/validate.jsp?email=pratiksha%40gmail.com&password=12345 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:51:54 +0530] "GET /day7.1/login.jsp HTTP/1.1" 200 611
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:53:44 +0530] "GET /day7.1/validate.jsp?email=rama%40gmail.com&password=1234 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:53:44 +0530] "GET /day7.1/summary.jsp HTTP/1.1" 200 592
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:53:57 +0530] "GET /day7.1/validate.jsp?email=rama%40gmail.com&password=hjj HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:53:57 +0530] "GET /day7.1/login.jsp HTTP/1.1" 200 611
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:53:59 +0530] "GET /day7.1/validate.jsp?email=&password= HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Oct/2020:14:53:59 +0530] "GET /day7.1/login.jsp HTTP/1.1" 200 611

@@ -1,0 +1,37 @@
+
+Sep 29, 2020 07:52:05.695 NEW SESSION
+Sep 29, 2020 07:52:05.695 [14984:25884:0929/075205.693:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+Sep 29, 2020 07:54:22.58 [23600:31080:0929/075422.057:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Sep 29, 2020 16:03:10.692 NEW SESSION
+Sep 29, 2020 16:03:10.692 [27516:5056:0929/160310.689:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+Sep 29, 2020 17:07:54.683 [27516:15944:0929/170754.682:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sep 29, 2020 17:08:19.103 [27516:15944:0929/170819.102:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Sep 29, 2020 17:09:11.269 [27516:15944:0929/170911.269:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+
+Sep 30, 2020 16:26:23.824 NEW SESSION
+Sep 30, 2020 16:26:23.825 [17596:31692:0930/162623.819:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 01, 2020 15:10:29.766 NEW SESSION
+Oct 01, 2020 15:10:29.766 [10824:24324:1001/151029.764:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 02, 2020 14:51:35.131 NEW SESSION
+Oct 02, 2020 14:51:35.131 [20272:28532:1002/145135.129:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 08, 2020 24:15:27.365 NEW SESSION
+Oct 08, 2020 24:15:27.365 [14968:30112:1008/001527.363:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 09, 2020 19:09:43.987 NEW SESSION
+Oct 09, 2020 19:09:43.987 [24960:35244:1009/190943.298:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+Oct 09, 2020 19:11:02.123 [26660:20332:1009/191102.122:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+Oct 09, 2020 19:15:19.818 [34500:7068:1009/191519.818:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+Oct 09, 2020 19:17:23.749 [24960:32148:1009/191723.748:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 09, 2020 22:48:08.74 NEW SESSION
+Oct 09, 2020 22:48:08.74 [34020:30908:1009/224808.072:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+Oct 10, 2020 15:38:16.742 NEW SESSION
+Oct 10, 2020 15:38:16.742 [7572:25588:1010/153816.740:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+Oct 10, 2020 15:49:17.747 [7572:33116:1010/154917.746:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 10, 2020 15:49:30.734 [7572:33116:1010/154930.733:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 10, 2020 15:57:59.947 [12760:34336:1010/155759.946:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.

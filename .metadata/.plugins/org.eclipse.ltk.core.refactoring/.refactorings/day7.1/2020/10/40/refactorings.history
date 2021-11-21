@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;err_handler.jsp&apos; to &apos;errs&apos;" description="Move &apos;err_handler.jsp&apos; to &apos;errs&apos;" destination="WebContent/errs" element1="WebContent/err_handler.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1601630309815" updateReferences="true"/>
+</session>
